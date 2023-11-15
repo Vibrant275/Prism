@@ -1,6 +1,6 @@
-namespace psm.CodeAnalysis;
+namespace Prism.CodeAnalysis;
 
-abstract class SyntaxNode
+public abstract class SyntaxNode
 {
     public abstract SyntaxKind Kind { get; }
 
