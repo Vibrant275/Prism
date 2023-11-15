@@ -1,58 +1,51 @@
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Vibrant275/Prism/blob/master/Banner.png">
-    <img src="https://github.com/Vibrant275/Prism/blob/master/Banner.png" alt="Swift logo" height="75">
+    <img src="https://github.com/Vibrant275/Prism/blob/master/Banner.png" alt="Swift logo" height="90">
 </picture>
 
 ## Prism: Empowering the Vibrant Ecosystem
 
-Welcome to Prism, a cutting-edge programming language designed for the future of software development.
+Prism emerges from a unique vision—to fill the void of a versatile universal language
+tailored for the vibrant realms of software development. Born out of the necessity for
+a multipurpose language dedicated to our ecosystem, Prism transcends boundaries,
+becoming the keystone for the entire "Vibrant" ecosystem.
 
-## Contributing
+## Key Features:
+Prism is more than just a language; it's a comprehensive toolkit spanning web development,
+app creation, system architecture, and database management. It’s the all-in-one language
+designed to bring synergy across the entire Vibrant spectrum.
 
-We welcome contributions from the community to make Prism even better! If you're interested in contributing, please follow these steps:
+### +Ecosystem Harmony:
+Designed to resonate with the Vibrant ecosystem, Prism serves as the linchpin for creating
+software that seamlessly integrates with Vibrant's VibeOS, EliteOS, WatchOS, TVOS.
+and more. It unifies the development experience, fostering consistency and efficiency.
 
-1. Fork the repository.
-2. Create a new branch: `git checkout -b feature/your-feature`.
-3. Make your changes and commit them: `git commit -m 'Add new feature'`.
-4. Push to the branch: `git push origin feature/your-feature`.
-5. Open a pull request.
+### +Multipurpose Marvel:
+Prism is a complete universal language, eliminating the need
+for multiple tools for different tasks. Whether you're delving into web development,
+creating immersive apps, or building robust system-level software, Prism has you covered.
 
-Our team will review your contribution and provide feedback. Thank you for helping improve Prism!
+### +Interoperability:
+Seamlessly blend Prism with the power of C++. Whether you're harnessing the low-level
+might of C++ or riding the expressiveness of Prism, enjoy the best of both worlds for unparalleled flexibility and performance
+into Prism projects.
 
-## Milestones
+## Prism's Energy Unleashed:
+In a world craving efficiency and dynamism, Prism stands as a beacon of innovation.
+It's not just a language; it's a declaration—a call to unite development under one banner,
+simplifying the intricate dance of creating softwares for diverse "Vibrant" platform.
 
-### 1.0 Release
-- [ ] Define language syntax
-- [ ] Implement basic language features
-- [ ] Develop a simple compiler
-- [ ] Create documentation for users and contributors
+Prism doesn't just code; it choreographs. It doesn't merely run; it pulses with life.
+Welcome to a language that's as boundless as your imagination, as vibrant as your creativity,
+and as powerful as the ecosystem it calls home.
 
-### 2.0 Release
-- [ ] Introduce advanced language features
-- [ ] Enhance compiler performance
-- [ ] Develop a standard library
-- [ ] Conduct thorough testing
+Unlock the energy of Prism and sculpt the future of Vibrant experiences.
+Let your code resonate with the rhythm of innovation, and witness the colorful symphony
+it creates across the entire Vibrant landscape. Elevate your development journey with
+Prism—where universality meets vibrancy.
 
-### Future Plans
-- [ ] Expand platform support (e.g., cross-platform compilation)
-- [ ] Implement advanced optimization techniques
-- [ ] Establish a vibrant community around Prism
-- [ ] Explore integration with popular development tools
-
-## Current Issues
-
-### Bug Fixes
-- [ ] Issue #1: Fix parsing bug in the lexer
-- [ ] Issue #2: Resolve syntax error in the compiler
-
-### Feature Requests
-- [ ] Issue #3: Add support for asynchronous programming
-- [ ] Issue #4: Implement pattern matching
-
-Feel free to contribute to any open issue or create a new one if you identify a problem or have a new idea! We appreciate your involvement in shaping the future of Prism.
-
-## Code of Conduct
-
-Please review our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
-
-Happy coding!
+## Contributing to Prism are Invited and Celebrated!
+Join Us in Shaping the Future of Prism!
+Contributions from developers like you make Prism vibrant and extraordinary.
+Whether you're fixing bugs, proposing features, or improving documentation, your efforts are valued.
+Ready to contribute? Checkout: [Contribution Guide](https://prism-7.vercel.app/contributing)
