@@ -1,6 +1,6 @@
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Vibrant275/Prism/blob/master/Banner.png">
-    <img src="https://github.com/Vibrant275/Prism/blob/master/Banner.png" alt="Swift logo" height="90">
+    <img src="https://github.com/Vibrant275/Prism/blob/master/Banner.png" alt="Swift logo" height="175">
 </picture>
 
 ## Prism: Empowering the Vibrant Ecosystem
@@ -15,17 +15,17 @@ Prism is more than just a language; it's a comprehensive toolkit spanning web de
 app creation, system architecture, and database management. It’s the all-in-one language
 designed to bring synergy across the entire Vibrant spectrum.
 
-### +Ecosystem Harmony:
+**•Ecosystem Harmony:**
 Designed to resonate with the Vibrant ecosystem, Prism serves as the linchpin for creating
 software that seamlessly integrates with Vibrant's VibeOS, EliteOS, WatchOS, TVOS.
 and more. It unifies the development experience, fostering consistency and efficiency.
 
-### +Multipurpose Marvel:
-Prism is a complete universal language, eliminating the need
-for multiple tools for different tasks. Whether you're delving into web development,
-creating immersive apps, or building robust system-level software, Prism has you covered.
+**•Universal Mastery:**
+Prism is more than just a language; it's a comprehensive toolkit spanning web development,
+app creation, system architecture, and database management. It’s the all-in-one language designed
+to bring synergy across the entire Vibrant spectrum.
 
-### +Interoperability:
+**•Interoperability:**
 Seamlessly blend Prism with the power of C++. Whether you're harnessing the low-level
 might of C++ or riding the expressiveness of Prism, enjoy the best of both worlds for unparalleled flexibility and performance
 into Prism projects.
@@ -46,6 +46,6 @@ Prism—where universality meets vibrancy.
 
 ## Contributing to Prism are Invited and Celebrated!
 Join Us in Shaping the Future of Prism!
-Contributions from developers like you make Prism vibrant and extraordinary.
-Whether you're fixing bugs, proposing features, or improving documentation, your efforts are valued.
+Contributions from developers like you make Prism and Vibrant ecosystem, extraordinary.
+Whether you're reporting bugs, fixing bugs, proposing features, or improving documentation, your efforts are valued.
 Ready to contribute? Checkout: [Contribution Guide](https://prism-7.vercel.app/contributing)
