@@ -1,10 +1,9 @@
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Vibrant275/Prism/blob/master/Prism.png">
-    <img src="https://github.com/Vibrant275/Prism/blob/master/Prism.png" alt="Swift logo" height="75">
+    <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Vibrant275/Prism/blob/master/Banner.png">
+    <img src="https://github.com/Vibrant275/Prism/blob/master/Banner.png" alt="Swift logo" height="75">
 </picture>
 
-# Prism
-## Next-Generation Programming Language
+## Prism: Empowering the Vibrant Ecosystem
 
 Welcome to Prism, a cutting-edge programming language designed for the future of software development.
 
