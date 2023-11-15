@@ -1,6 +1,6 @@
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Vibrant275/Prism/blob/master/Banner.png">
-    <img src="https://github.com/Vibrant275/Prism/blob/master/Banner.png" alt="Swift logo" height="145">
+    <img src="https://github.com/Vibrant275/Prism/blob/master/Banner.png" alt="Swift logo" height="200">
 </picture>
 
 ## Prism: Empowering the Vibrant Ecosystem
