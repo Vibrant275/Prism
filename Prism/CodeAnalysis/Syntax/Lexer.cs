@@ -1,4 +1,4 @@
-namespace Prism.CodeAnalysis;
+namespace Prism.CodeAnalysis.Syntax;
 
 internal sealed class Lexer
 {

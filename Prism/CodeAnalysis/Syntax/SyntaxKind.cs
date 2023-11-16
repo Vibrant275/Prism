@@ -1,4 +1,4 @@
-namespace Prism.CodeAnalysis;
+namespace Prism.CodeAnalysis.Syntax;
 
 public enum SyntaxKind
 {
@@ -59,7 +59,6 @@ public enum SyntaxKind
     StringToken,
     PlusEqualsToken,
     MinusEqualsToken,
-    StarToken,
     StarEqualsToken,
     SlashEqualsToken,
     BangToken,

@@ -10,22 +10,22 @@ tailored for the vibrant realms of software development. Born out of the necessi
 a multipurpose language dedicated to our ecosystem, Prism transcends boundaries,
 becoming the keystone for the entire "Vibrant" ecosystem.
 
-## Key Features:
+## Key Features:̥
 Prism is more than just a language; it's a comprehensive toolkit spanning web development,
 app creation, system architecture, and database management. It’s the all-in-one language
 designed to bring synergy across the entire Vibrant spectrum.
 
-**•Ecosystem Harmony:**
+`**Ecosystem Harmony:**`
 Designed to resonate with the Vibrant ecosystem, Prism serves as the linchpin for creating
 software that seamlessly integrates with Vibrant's VibeOS, EliteOS, WatchOS, TVOS.
 and more. It unifies the development experience, fostering consistency and efficiency.
 
-**•Universal Mastery:**
+`**Universal Mastery:**`
 Prism is more than just a language; it's a comprehensive toolkit spanning web development,
 app creation, system architecture, and database management. It’s the all-in-one language designed
 to bring synergy across the entire Vibrant spectrum.
 
-**•Interoperability:**
+`**Interoperability:**`
 Seamlessly blend Prism with the power of C++. Whether you're harnessing the low-level
 might of C++ or riding the expressiveness of Prism, enjoy the best of both worlds for unparalleled flexibility and performance
 into Prism projects.

@@ -1,4 +1,4 @@
-namespace Prism.CodeAnalysis;
+namespace Prism.CodeAnalysis.Syntax;
 
 public sealed class ParenthesizedExpressionSyntax : ExpressionSyntax
 {

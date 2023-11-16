@@ -1,4 +1,4 @@
-namespace Prism.CodeAnalysis;
+namespace Prism.CodeAnalysis.Syntax;
 
 public abstract class SyntaxNode
 {
