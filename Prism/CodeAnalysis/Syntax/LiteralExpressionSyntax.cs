@@ -1,15 +1,14 @@
-using System.Collections.Generic;
-
 namespace Prism.CodeAnalysis.Syntax
 {
-    public sealed class LiteralExpressionSyntax : ExpressionSyntax
+    public sealed partial class LiteralExpressionSyntax : ExpressionSyntax
     {
-        public LiteralExpressionSyntax(SyntaxToken literalToken)
-            : this(literalToken, literalToken.Value)
+        internal LiteralExpressionSyntax(SyntaxTree syntaxTree, SyntaxToken literalToken)
+            : this(syntaxTree, literalToken, literalToken.Value!)
         {
         }
 
-        public LiteralExpressionSyntax(SyntaxToken literalToken, object value)
+        internal LiteralExpressionSyntax(SyntaxTree syntaxTree, SyntaxToken literalToken, object value)
+            : base(syntaxTree)
         {
             LiteralToken = literalToken;
             Value = value;
@@ -18,10 +17,5 @@ namespace Prism.CodeAnalysis.Syntax
         public override SyntaxKind Kind => SyntaxKind.LiteralExpression;
         public SyntaxToken LiteralToken { get; }
         public object Value { get; }
-
-        public override IEnumerable<SyntaxNode> GetChildren()
-        {
-            yield return LiteralToken;
-        }
     }
 }

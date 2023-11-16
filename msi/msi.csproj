@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <IsTool>true</IsTool>
+    <OutputType>Exe</OutputType>
+    <IsPackable>false</IsPackable>
+    <ProjectName>Prism</ProjectName>
+    <RootNamespace>Prism</RootNamespace>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Prism\Prism.csproj" />
+  </ItemGroup>
+
+</Project>

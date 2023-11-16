@@ -1,0 +1,27 @@
+<Project>
+
+  <Target Name="CreateManifestResourceNames" />
+
+  <Target Name="CoreCompile" DependsOnTargets="$(CoreCompileDependsOn)">
+    <ItemGroup>
+      <ReferencePath Remove="@(ReferencePath)"
+                     Condition="'%(FileName)' != 'System.Console' AND
+                                '%(FileName)' != 'System.Runtime' AND
+                                '%(FileName)' != 'System.Runtime.Extensions'" />
+    </ItemGroup>
+
+    <PropertyGroup>
+      <PrismCompilerArgs>@(Compile->'"%(Identity)"', ' ')</PrismCompilerArgs>
+      <PrismCompilerArgs>$(PrismCompilerArgs) /o "@(IntermediateAssembly)"</PrismCompilerArgs>
+      <PrismCompilerArgs>$(PrismCompilerArgs) @(ReferencePath->'/r "%(Identity)"', ' ')</PrismCompilerArgs>
+
+      <PrismScriptExt Condition="$([MSBuild]::IsOSUnixLike())">.sh</PrismScriptExt>
+      <PrismScriptExt Condition="$([MSBuild]::IsOSPlatform('Windows'))">.cmd</PrismScriptExt>
+      <PrismCompilerScript Condition="'$(PrismCompilerScript)' == ''">msc$(PrismScriptExt)</PrismCompilerScript>
+      <PrismCompileCommand>"$([MSBuild]::NormalizePath('$(MSBuildThisFileDirectory)..\', '$(PrismCompilerScript)'))" $(PrismCompilerArgs)</PrismCompileCommand>
+    </PropertyGroup>
+
+    <Exec Command="$(PrismCompileCommand)" />
+  </Target>
+
+</Project>

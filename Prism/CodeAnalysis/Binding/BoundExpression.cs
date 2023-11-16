@@ -1,9 +1,17 @@
 using System;
+using Prism.CodeAnalysis.Symbols;
+using Prism.CodeAnalysis.Syntax;
 
 namespace Prism.CodeAnalysis.Binding
 {
     internal abstract class BoundExpression : BoundNode
     {
-        public abstract Type Type { get; }
+        protected BoundExpression(SyntaxNode syntax)
+            : base(syntax)
+        {
+        }
+
+        public abstract TypeSymbol Type { get; }
+        public virtual BoundConstant? ConstantValue => null;
     }
 }
