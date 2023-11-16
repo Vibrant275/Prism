@@ -1,16 +1,18 @@
-using Prism.CodeAnalysis.Binding;
+using System;
 
-internal sealed class BoundUnaryExpression : BoundExpression
+namespace Prism.CodeAnalysis.Binding
 {
-    public BoundUnaryExpression(BoundUnaryOperatorKind operatorKind, BoundExpression operand)
+    internal sealed class BoundUnaryExpression : BoundExpression
     {
-        OperatorKind = operatorKind;
-        Operand = operand;
+        public BoundUnaryExpression(BoundUnaryOperatorKind operatorKind, BoundExpression operand)
+        {
+            OperatorKind = operatorKind;
+            Operand = operand;
+        }
+
+        public override BoundNodeKind Kind => BoundNodeKind.UnaryExpression;
+        public override Type Type => Operand.Type;
+        public BoundUnaryOperatorKind OperatorKind { get; }
+        public BoundExpression Operand { get; }
     }
-
-    public BoundUnaryOperatorKind OperatorKind { get; }
-    public BoundExpression Operand { get; }
-
-    public override Type Type => Operand.Type;
-    public override BoundNodeKind Kind => BoundNodeKind.UnaryExpression;
 }

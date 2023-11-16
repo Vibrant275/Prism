@@ -1,17 +1,20 @@
-using Prism.CodeAnalysis.Binding;
+using System;
 
-internal sealed class BoundBinaryExpression : BoundExpression
+namespace Prism.CodeAnalysis.Binding
 {
-    public BoundBinaryExpression(BoundExpression left, BoundBinaryOperatorKind operatorKind, BoundExpression right)
+    internal sealed class BoundBinaryExpression : BoundExpression
     {
-        Left = left;
-        OperatorKind = operatorKind;
-        Right = right;
-    }
+        public BoundBinaryExpression(BoundExpression left, BoundBinaryOperatorKind operatorKind, BoundExpression right)
+        {
+            Left = left;
+            OperatorKind = operatorKind;
+            Right = right;
+        }
 
-    public BoundBinaryOperatorKind OperatorKind { get; }
-    public BoundExpression Left { get; }
-    public BoundExpression Right { get; }
-    public override BoundNodeKind Kind => BoundNodeKind.UnaryExpression;
-    public override Type Type => Left.Type;
+        public override BoundNodeKind Kind => BoundNodeKind.UnaryExpression;
+        public override Type Type => Left.Type;
+        public BoundExpression Left { get; }
+        public BoundBinaryOperatorKind OperatorKind { get; }
+        public BoundExpression Right { get; }
+    }
 }

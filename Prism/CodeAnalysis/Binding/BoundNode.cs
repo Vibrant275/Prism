@@ -1,6 +1,7 @@
-using Prism.CodeAnalysis.Binding;
-
-internal abstract class BoundNode
+namespace Prism.CodeAnalysis.Binding
 {
-    public abstract BoundNodeKind Kind { get; }
+    internal abstract class BoundNode
+    {
+        public abstract BoundNodeKind Kind { get; }        
+    }
 }

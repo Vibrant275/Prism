@@ -1,29 +1,8 @@
-namespace Prism.CodeAnalysis.Binding;
-
-internal enum BoundNodeKind
+namespace Prism.CodeAnalysis.Binding
 {
-    // Statements
-    BlockStatement,
-    NopStatement,
-    VariableDeclaration,
-    IfStatement,
-    WhileStatement,
-    DoWhileStatement,
-    ForStatement,
-    LabelStatement,
-    GotoStatement,
-    ConditionalGotoStatement,
-    ReturnStatement,
-    ExpressionStatement,
-
-    // Expressions
-    ErrorExpression,
-    LiteralExpression,
-    VariableExpression,
-    AssignmentExpression,
-    CompoundAssignmentExpression,
-    UnaryExpression,
-    BinaryExpression,
-    CallExpression,
-    ConversionExpression,
+    internal enum BoundNodeKind
+    {
+        LiteralExpression,
+        UnaryExpression
+    }
 }

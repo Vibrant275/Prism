@@ -1,20 +1,24 @@
-namespace Prism.CodeAnalysis.Syntax;
+using System.Collections.Generic;
 
-public sealed class UnaryExpressionSyntax : ExpressionSyntax
+namespace Prism.CodeAnalysis.Syntax
 {
-    public UnaryExpressionSyntax(SyntaxToken operatorToken, ExpressionSyntax operand)
+    public sealed class UnaryExpressionSyntax : ExpressionSyntax
     {
-        OperatorToken = operatorToken;
-        Operand = operand;
+        public UnaryExpressionSyntax(SyntaxToken operatorToken, ExpressionSyntax operand)
+        {
+            OperatorToken = operatorToken;
+            Operand = operand;
+        }
+
+        public override SyntaxKind Kind => SyntaxKind.UnaryExpression;
+        public SyntaxToken OperatorToken { get; }
+        public ExpressionSyntax Operand { get; }
+
+        public override IEnumerable<SyntaxNode> GetChildren()
+        {
+            yield return OperatorToken;
+            yield return Operand;
+        }
     }
 
-    public override SyntaxKind Kind => SyntaxKind.UnaryExpression;
-    public override IEnumerable<SyntaxNode> GetChildren()
-    {
-       yield return OperatorToken;
-       yield return Operand;
-    }
-
-    public SyntaxToken OperatorToken { get; }
-    public ExpressionSyntax Operand { get; }
 }

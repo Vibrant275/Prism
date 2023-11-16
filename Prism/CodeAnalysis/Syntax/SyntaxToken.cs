@@ -1,22 +1,26 @@
-namespace Prism.CodeAnalysis.Syntax;
+using System.Collections.Generic;
+using System.Linq;
 
-public sealed class SyntaxToken : SyntaxNode
+namespace Prism.CodeAnalysis.Syntax
 {
-    public SyntaxToken(SyntaxKind kind, int position, string text, object value)
+    public sealed class SyntaxToken : SyntaxNode
     {
-        Kind = kind;
-        Position = position;
-        Text = text;
-        Value = value;
-    }
+        public SyntaxToken(SyntaxKind kind, int position, string text, object value)
+        {
+            Kind = kind;
+            Position = position;
+            Text = text;
+            Value = value;
+        }
 
-    public override SyntaxKind Kind { get; }
-    public int Position { get; }
-    public string Text { get; }
-    public object Value { get; }
+        public override SyntaxKind Kind { get; }
+        public int Position { get; }
+        public string Text { get; }
+        public object Value { get; }
 
-    public override IEnumerable<SyntaxNode> GetChildren()
-    {
-        return Enumerable.Empty<SyntaxNode>();
+        public override IEnumerable<SyntaxNode> GetChildren()
+        {
+            return Enumerable.Empty<SyntaxNode>();
+        }
     }
 }

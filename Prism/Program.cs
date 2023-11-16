@@ -54,9 +54,7 @@ namespace Prism
                     Console.ForegroundColor = ConsoleColor.DarkRed;
 
                     foreach (var diagnostic in syntaxTree.Diagnostics)
-                    {
                         Console.WriteLine(diagnostic);
-                    }
 
                     Console.ResetColor();
                 }

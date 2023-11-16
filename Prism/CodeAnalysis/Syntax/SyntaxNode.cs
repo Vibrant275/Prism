@@ -1,8 +1,11 @@
-namespace Prism.CodeAnalysis.Syntax;
+using System.Collections.Generic;
 
-public abstract class SyntaxNode
+namespace Prism.CodeAnalysis.Syntax
 {
-    public abstract SyntaxKind Kind { get; }
+    public abstract class SyntaxNode
+    {
+        public abstract SyntaxKind Kind { get; }
 
-    public abstract IEnumerable<SyntaxNode> GetChildren();
+        public abstract IEnumerable<SyntaxNode> GetChildren();
+    }
 }

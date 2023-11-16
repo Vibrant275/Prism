@@ -1,9 +1,9 @@
-namespace Prism.CodeAnalysis.Binding;
-
-internal enum BoundUnaryOperatorKind
+namespace Prism.CodeAnalysis.Binding
 {
-    Identity,
-    Negation,
-    LogicalNegation,
-    OnesComplement
+    internal enum BoundUnaryOperatorKind
+    {
+        Identity,
+        Negation,
+        LogicalNegation
+    }
 }

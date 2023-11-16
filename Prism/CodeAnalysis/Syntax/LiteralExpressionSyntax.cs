@@ -1,24 +1,27 @@
-namespace Prism.CodeAnalysis.Syntax;
+using System.Collections.Generic;
 
-public sealed class LiteralExpressionSyntax : ExpressionSyntax
+namespace Prism.CodeAnalysis.Syntax
 {
-    public LiteralExpressionSyntax(SyntaxToken literalToken): this(literalToken, literalToken.Value)
+    public sealed class LiteralExpressionSyntax : ExpressionSyntax
     {
+        public LiteralExpressionSyntax(SyntaxToken literalToken)
+            : this(literalToken, literalToken.Value)
+        {
+        }
+
+        public LiteralExpressionSyntax(SyntaxToken literalToken, object value)
+        {
+            LiteralToken = literalToken;
+            Value = value;
+        }
+
+        public override SyntaxKind Kind => SyntaxKind.LiteralExpression;
+        public SyntaxToken LiteralToken { get; }
+        public object Value { get; }
+
+        public override IEnumerable<SyntaxNode> GetChildren()
+        {
+            yield return LiteralToken;
+        }
     }
-
-    public LiteralExpressionSyntax(SyntaxToken literalToken, object value)
-    {
-        LiteralToken = literalToken;
-        Value = value;
-    }
-
-    public override SyntaxKind Kind => SyntaxKind.LiteralExpression;
-
-    public override IEnumerable<SyntaxNode> GetChildren()
-    {
-        yield return LiteralToken;
-    }
-
-    public SyntaxToken LiteralToken { get; }
-    public object Value { get; }
 }

@@ -1,5 +1,5 @@
-namespace Prism.CodeAnalysis.Binding;
-
+namespace Prism.CodeAnalysis.Binding
+{
     internal enum BoundBinaryOperatorKind
     {
         Addition,
@@ -7,15 +7,6 @@ namespace Prism.CodeAnalysis.Binding;
         Multiplication,
         Division,
         LogicalAnd,
-        LogicalOr,
-        BitwiseAnd,
-        BitwiseOr,
-        BitwiseXor,
-        Equals,
-        NotEquals,
-        Less,
-        LessOrEquals,
-        Greater,
-        GreaterOrEquals,
-    
+        LogicalOr
+    }
 }

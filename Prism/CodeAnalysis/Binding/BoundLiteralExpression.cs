@@ -1,14 +1,16 @@
-using Prism.CodeAnalysis.Binding;
+using System;
 
-internal sealed class BoundLiteralExpression : BoundExpression
+namespace Prism.CodeAnalysis.Binding
 {
-    public object Value { get; }
-
-    public BoundLiteralExpression(object value)
+    internal sealed class BoundLiteralExpression : BoundExpression
     {
-        Value = value;
-    }
+        public BoundLiteralExpression(object value)
+        {
+            Value = value;
+        }
 
-    public override BoundNodeKind Kind => BoundNodeKind.LiteralExpression;
-    public override Type Type => Value.GetType();
+        public override BoundNodeKind Kind => BoundNodeKind.LiteralExpression;
+        public override Type Type => Value.GetType();
+        public object Value { get; }
+    }
 }

@@ -1,4 +1,9 @@
-internal abstract class BoundExpression : BoundNode
+using System;
+
+namespace Prism.CodeAnalysis.Binding
 {
-    public abstract Type Type { get; }
+    internal abstract class BoundExpression : BoundNode
+    {
+        public abstract Type Type { get; }
+    }
 }
