@@ -13,17 +13,17 @@ internal sealed class Lexer
 
     public IEnumerable<string> Diagnoatics => _diagnostics;
 
-    private Char Current
-    {
-        get
-        {
-            if (_position >= _text.Length)
-            {
-                return '\0';
-            }
+    private Char Current => Peek(0);
+    private Char LookAhead => Peek(1);
 
-            return _text[_position];
-        }
+    private char Peek(int offset)
+    {
+        var index = _position + offset;
+
+        if (index >= _text.Length)
+            return '\0';
+
+        return _text[_position];
     }
 
     private void Next()
@@ -69,6 +69,19 @@ internal sealed class Lexer
             return new SyntaxToken(SyntaxKind.WhitespaceToken, start, text, null);
         }
 
+        if (char.IsLetter(Current))
+        {
+            var start = _position;
+
+            while (char.IsLetter(Current))
+                Next();
+
+            var length = _position - start;
+            var text = _text.Substring(start, length);
+            var kind = SyntaxFacts.GetKeywordKind(text);
+            return new SyntaxToken(kind, start, text, null);
+        }
+
         switch (Current)
         {
             case '+':
@@ -83,6 +96,16 @@ internal sealed class Lexer
                 return new SyntaxToken(SyntaxKind.OpenParenthesisToken, _position++, "(", null);
             case ')':
                 return new SyntaxToken(SyntaxKind.CloseParenthesisToken, _position++, ")", null);
+            case '!':
+                return new SyntaxToken(SyntaxKind.BangToken, _position++, "!", null);
+            case '&':
+                if (LookAhead == '&')
+                    return new SyntaxToken(SyntaxKind.AmpersandAmpersandToken, _position+= 2, "&&", null);
+                break;
+            case '|':
+                if (LookAhead == '|')
+                    return new SyntaxToken(SyntaxKind.PipePipeToken, _position+= 2, "||", null);
+                break;
             default:
                 return new SyntaxToken(SyntaxKind.BadToken, _position++, _text.Substring(_position - 1, 1), null);
         }

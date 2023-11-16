@@ -1,6 +1,6 @@
 using Prism.CodeAnalysis.Binding;
 
-internal abstract class BoundUnaryExpression : BoundExpression
+internal sealed class BoundUnaryExpression : BoundExpression
 {
     public BoundUnaryExpression(BoundUnaryOperatorKind operatorKind, BoundExpression operand)
     {
